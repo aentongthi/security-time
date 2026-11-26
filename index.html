@@ -9,82 +9,83 @@
 <meta property="og:image" content="https://aentongthi.github.io/security-time/assets/hero-phone-promo.webp">
 <title>SecurityTimeCamera v3.9 | Camera Bảo vệ</title>
 <style>
-:root{--bg:#020d1e;--panel:#061c38;--cyan:#12bfff;--gold:#ffd43b;--text:#f5f9ff;--muted:#b9cbe2;--glow:0 0 22px #008cff55}
+:root{--bg:#020d1e;--panel:#061c38;--cyan:#12bfff;--gold:#ffd43b;--text:#f5f9ff;--muted:#b9cbe2;--glow:0 0 20px #008cff55}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:82px}
-body{margin:0;color:var(--text);font-family:Inter,system-ui,"Segoe UI",Arial,sans-serif;background:radial-gradient(ellipse at 50% 0,#0b2d59,#031329 55%,#020916);line-height:1.5}
-body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("assets/securitytimecamera-watermark.svg");background-repeat:no-repeat;background-position:center 55%;background-size:min(64vw,780px);opacity:.075}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;color:var(--text);font-family:Inter,system-ui,"Segoe UI",Arial,sans-serif;background:radial-gradient(ellipse at 50% 0,#0b2d59,#031329 55%,#020916);line-height:1.45}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("assets/securitytimecamera-watermark.svg");background-repeat:no-repeat;background-position:center 52%;background-size:min(76vw,920px);opacity:.14}
 main,footer{position:relative;z-index:1}
 a{color:inherit;text-decoration:none}
-.wrap{width:min(1320px,96%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:#020e1ff2;backdrop-filter:blur(14px);border-bottom:1px solid #168cff88;box-shadow:0 4px 22px #00132d99}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:950;font-size:19px;white-space:nowrap;letter-spacing:-.35px;text-shadow:0 0 14px #159dff88}
-.links{display:flex;gap:clamp(10px,1.7vw,25px);font-size:14px;font-weight:800;align-items:center}
-.links a{padding:9px 12px;border-radius:30px;transition:.2s}
+.wrap{width:min(1340px,96%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#020e1ff5;backdrop-filter:blur(14px);border-bottom:1px solid #168cff88;box-shadow:0 4px 22px #00132d99}
+.nav{height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:950;font-size:15px;white-space:nowrap;letter-spacing:-.35px;text-shadow:0 0 14px #159dff88}
+.links{display:flex;gap:clamp(5px,1.15vw,17px);font-size:12px;font-weight:800;align-items:center}
+.links a{padding:7px 10px;border-radius:30px;transition:.2s}
 .links a:hover,.links a:focus{background:#0877e755;color:#8feaff;box-shadow:0 0 14px #008cff66}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:15px;background:linear-gradient(100deg,#0877e7,#08bfff);border:1px solid #69dcff;box-shadow:0 0 18px #008cff66;color:white;font-weight:950;cursor:pointer;transition:transform .18s,filter .18s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;border-radius:22px;background:linear-gradient(100deg,#0877e7,#08bfff);border:1px solid #69dcff;box-shadow:0 0 18px #008cff66;color:white;font-weight:950;cursor:pointer;transition:transform .18s,filter .18s}
 .btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
 .green{background:linear-gradient(100deg,#00a72d,#08e74c);border-color:#9affaa;box-shadow:0 0 20px #00e84d66}
-.ghost{background:#031a35;box-shadow:none}
-.navbtn{padding:10px 17px;white-space:nowrap}
-.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);gap:28px;align-items:center;min-height:560px;padding:34px clamp(22px,4vw,56px);overflow:hidden;border-radius:0 0 26px 26px;background-color:#041a36;background-image:radial-gradient(ellipse at 78% 48%,#087bd044,transparent 48%),linear-gradient(145deg,#041a36,#031329 72%)}
-.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(1,10,25,.16),transparent 60%)}
-.hero-guard{display:none}.hero-art{position:relative;z-index:2;width:100%;max-width:470px;justify-self:center;margin:auto}.hero-art img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;border:0;border-radius:0;box-shadow:none;filter:none}
-.hero-copy{position:relative;z-index:2;width:100%;max-width:680px;margin:0;text-align:left}
-.eyebrow{color:#8ceaff;font-size:13px;font-weight:950;letter-spacing:1.2px;text-shadow:0 0 12px #00aaff}
-.hero h1{font-size:clamp(32px,3.6vw,52px);line-height:1.05;letter-spacing:-1.5px;font-style:italic;white-space:normal;margin:10px 0 12px;text-shadow:0 0 18px #168fff,0 3px 5px #00152d}
-.hero h1 span{display:inline-block;color:#ffd83e;border:2px solid #ffd83e;border-radius:16px;padding:2px 12px;margin-left:8px;text-shadow:0 0 14px #ffb000;box-shadow:0 0 15px #ffca3855}
-.subtitle{font-size:clamp(17px,1.8vw,23px);font-weight:900;margin:0 0 8px;text-shadow:0 2px 8px #00152d}
-.desc{max-width:700px;margin:0 auto;color:#d0e4f7;font-size:14px;text-shadow:0 2px 6px #00152d}
-.checks{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:7px 14px;margin:16px 0;font-size:13px;font-weight:900}
-.checks span:before{content:"✓ ";color:#00ef72;font-size:15px}
-.actions{display:flex;justify-content:flex-start;gap:12px;flex-wrap:wrap}
-.specs{font-size:12px;color:#c1d9f1;margin-top:14px;text-shadow:0 2px 6px #00152d}
-.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin:0 auto 28px;position:relative;z-index:2}
-.quick article{text-align:center;padding:17px 8px 15px;border:1px solid #12adff;border-radius:16px;background:linear-gradient(145deg,#082a50ee,#03152df2);box-shadow:var(--glow)}
-.quick b{font-size:31px;display:block;line-height:1.2;margin-bottom:5px}
-.quick strong{font-size:15px}
-.quick small{display:block;color:#b9cbe2;font-size:12px}
-.panel,.info{background:linear-gradient(145deg,#062346f5,#031329f5);border:1px solid #159effaa;border-radius:20px;box-shadow:var(--glow);padding:22px}
-.section{padding:25px 0 34px}
-.stitle{font-size:25px;font-weight:950;margin:0 0 4px;text-shadow:0 0 12px #008cff77}
-.sub{font-size:14px;color:var(--muted);margin:0 0 18px}
-.gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;max-width:1160px;margin:auto}
-.shot{overflow:hidden;border:1px solid #2cbfff;border-radius:16px;background:#020d1e;box-shadow:var(--glow);margin:0;transition:transform .2s,box-shadow .2s}
-.shot:hover{transform:translateY(-4px);box-shadow:0 0 25px #00aaff77}
-.preview{aspect-ratio:260/600;background-image:url("assets/gallery-strip.webp");background-size:500% 100%;background-repeat:no-repeat}
-.p1{background-position:0%}.p2{background-position:25%}.p3{background-position:50%}.p4{background-position:75%}.p5{background-position:100%}
-.shot figcaption{text-align:center;font-size:13px;font-weight:900;padding:10px 5px;background:#061a34}
-.pricehead{text-align:center;margin:12px 0 22px}
-.pricehead h2{font-size:clamp(28px,3.5vw,40px);margin:0 0 6px;background:linear-gradient(90deg,#fff,#69dcff,#d18cff);color:transparent;background-clip:text}
-.pricehead p{font-size:14px;color:var(--muted);margin:0}
-.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1120px;margin:auto}
-.pricecard{position:relative;padding:23px;border:1px solid #159eff;border-radius:20px;background:linear-gradient(145deg,#061f40,#031329);display:flex;flex-direction:column;min-height:255px;box-shadow:0 8px 24px #0003}
+.ghost{background:#031a35;box-shadow:0 0 12px #008cff33}
+.navbtn{padding:7px 17px;white-space:nowrap;font-size:12px}
+.hero{position:relative;display:flex;align-items:center;justify-content:center;height:330px;min-height:330px;padding:8px 0 10px;overflow:hidden;border-radius:0 0 18px 18px;background:#03152d url("assets/hero-sides.webp") center center/100% 100% no-repeat}
+.hero:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(1,10,25,.04) 0%,rgba(1,10,25,.08) 18%,rgba(1,10,25,.40) 35%,rgba(1,10,25,.42) 65%,rgba(1,10,25,.08) 83%,rgba(1,10,25,.03) 100%)}
+.hero-copy{position:relative;z-index:2;width:min(860px,68%);max-width:860px;margin:0 auto;text-align:center}
+.mobile-hero-art{display:none}
+.eyebrow{color:#8ceaff;font-size:10px;font-weight:950;letter-spacing:1.2px;text-shadow:0 0 12px #00aaff}
+.hero h1{font-size:clamp(34px,4.2vw,55px);line-height:1.02;letter-spacing:-1.5px;font-style:italic;white-space:nowrap;margin:4px 0 4px;text-shadow:0 0 18px #168fff,0 3px 5px #00152d}
+.hero h1 span{display:inline-block;color:#ffd83e;border:2px solid #ffd83e;border-radius:16px;padding:1px 12px;margin-left:7px;text-shadow:0 0 14px #ffb000;box-shadow:0 0 15px #ffca3855}
+.subtitle{font-size:clamp(16px,1.75vw,21px);font-weight:900;margin:0 0 3px;text-shadow:0 2px 8px #00152d}
+.desc{max-width:760px;margin:0 auto;color:#d0e4f7;font-size:11px;text-shadow:0 2px 6px #00152d}
+.checks{display:flex;justify-content:center;flex-wrap:wrap;gap:5px 13px;margin:7px 0 9px;font-size:12px;font-weight:900}
+.checks span:before{content:"✓ ";color:#00ef72;font-size:14px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.actions .btn{min-width:190px;padding:9px 20px;font-size:16px}
+.specs{font-size:11px;color:#c1d9f1;margin-top:6px;text-shadow:0 2px 6px #00152d}
+.quick{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;position:relative;z-index:2}
+.hero-quick{width:min(810px,100%);margin:9px auto 11px}
+.quick article{text-align:center;padding:8px 6px 7px;border:1px solid #12adff;border-radius:14px;background:linear-gradient(145deg,#082a50ed,#03152df2);box-shadow:var(--glow);min-height:76px}
+.quick b{font-size:30px;display:block;line-height:1.1;margin-bottom:3px}
+.quick strong{font-size:13px;display:block}
+.quick small{display:block;color:#b9cbe2;font-size:10px}
+.panel,.info{background:linear-gradient(145deg,#062346f5,#031329f5);border:1px solid #159effaa;border-radius:18px;box-shadow:var(--glow);padding:13px 18px}
+.section{padding:0 0 17px}
+#hinh-anh{margin-top:0}
+.stitle{font-size:21px;font-weight:950;margin:0 0 1px;text-shadow:0 0 12px #008cff77}
+.sub{font-size:11px;color:var(--muted);margin:0 0 9px}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;max-width:1250px;margin:auto}
+.shot{overflow:hidden;border:1px solid #2cbfff;border-radius:13px;background:#020d1e;box-shadow:var(--glow);margin:0;transition:transform .2s,box-shadow .2s}
+.shot:hover{transform:translateY(-3px);box-shadow:0 0 25px #00aaff77}
+.preview{height:145px;position:relative;overflow:hidden;background:linear-gradient(145deg,#dfeaf7,#fff);display:flex;justify-content:center}
+.preview img{position:absolute;top:0;height:100%;width:auto;max-width:none;left:calc(50% - 36.1px - 72.2px * var(--slice))}
+.shot figcaption{text-align:center;font-size:12px;font-weight:900;padding:5px 4px;background:#061a34}
+#bang-gia.section{padding:0 0 15px}
+.pricehead{text-align:center;margin:0 0 10px}
+.pricehead h2{font-size:clamp(23px,2.6vw,30px);line-height:1.15;margin:0 0 2px;background:linear-gradient(90deg,#fff,#69dcff,#d18cff);color:transparent;background-clip:text}
+.pricehead p{font-size:11px;color:var(--muted);margin:0}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1160px;margin:auto}
+.pricecard{position:relative;padding:12px 18px 11px;border:1px solid #159eff;border-radius:18px;background:linear-gradient(145deg,#061f40,#031329);display:flex;flex-direction:column;min-height:160px;box-shadow:0 8px 24px #0003}
 .pricecard.hot{border-color:#ff8145;background:linear-gradient(145deg,#2a1726,#101326);box-shadow:0 0 25px #ff743355}
-.pricecard h3{text-align:center;margin:0;font-size:21px}
-.amount{text-align:center;font-size:37px;font-weight:950;margin:5px 0 12px}
-.amount small{font-size:13px;color:#b9cbe2}
+.pricecard h3{text-align:center;margin:0;font-size:17px}
+.amount{text-align:center;font-size:29px;font-weight:950;margin:0 0 3px}
+.amount small{font-size:12px;color:#b9cbe2}
 .free{color:#42e52d}.orange{color:#ffbd54}.cyan{color:#20ddff}
-.pricecard ul{padding:0;list-style:none;font-size:14px;color:#d8e5f4;flex:1}
-.pricecard li{margin:9px 0}.pricecard li:before{content:"✓ ";color:#00e45b;font-weight:950}
-.pricecard .btn{width:100%;font-size:14px;padding:12px}
-.popular{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#ff8a00,#ff4d8a);border-radius:30px;padding:4px 14px;font-size:12px;font-weight:950;white-space:nowrap}
-.pricenote{text-align:center;color:#9fb8d4;font-size:13px;max-width:800px;margin:16px auto}
-.guide{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.step{padding:17px;border:1px solid #148fe477;border-radius:16px;background:#061e3b}
-.num{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#087de5;font-weight:950}
-.step h3{font-size:16px;margin:8px 0 4px}.step p{font-size:13px;color:#b9cbe2;margin:0}
-.note{margin-top:14px;padding:12px 14px;border-left:3px solid #ffd34a;background:#30290f66;font-size:13px;color:#e4dfc9}
-.bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding-bottom:36px}
-.info h3{font-size:20px;margin:0 0 12px}
-.info ul{list-style:none;padding:0;margin:0;font-size:14px;color:#dce9f8}
-.info li{margin:9px 0}.info li:before{content:"✓ ";color:#18e85e;font-weight:950}
-.chip{background:#00bd42;border-radius:20px;padding:4px 9px;font-size:11px}
-.support{display:grid;gap:10px}
-.support a{text-align:center;background:linear-gradient(100deg,#0877e6,#08baff);border-radius:12px;padding:12px;font-size:14px;font-weight:900}
-.zalo{text-align:center;margin-top:10px;font-size:14px}
-footer{border-top:1px solid #168bd966;padding:20px 0;color:#9db5d0;font-size:13px}
+.pricecard ul{padding:0;list-style:none;font-size:11px;line-height:1.25;color:#d8e5f4;flex:1;margin:2px 0 5px}
+.pricecard li{margin:4px 0}.pricecard li:before{content:"✓ ";color:#00e45b;font-weight:950}
+.pricecard .btn{width:100%;font-size:13px;padding:7px 12px}
+.popular{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#ff8a00,#ff4d8a);border-radius:30px;padding:3px 12px;font-size:10px;font-weight:950;white-space:nowrap}
+.pricenote{display:none}
+.bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding:0 0 22px}
+.info{padding:13px 17px;min-height:154px}
+.info h3{font-size:17px;margin:0 0 7px}
+.info ul{list-style:none;padding:0;margin:0;font-size:11px;line-height:1.25;color:#dce9f8}
+.info li{margin:4px 0}.info li:before{content:"✓ ";color:#18e85e;font-weight:950}
+.chip{background:#00bd42;border-radius:20px;padding:3px 8px;font-size:10px}
+.support{display:grid;gap:7px}
+.support a{text-align:center;background:linear-gradient(100deg,#0877e6,#08baff);border-radius:12px;padding:8px 10px;font-size:13px;font-weight:900;box-shadow:0 0 14px #008cff55}
+.zalo{text-align:center;margin-top:6px;font-size:13px}
+#huong-dan{display:none}
+footer{border-top:1px solid #168bd966;padding:12px 0;color:#9db5d0;font-size:12px}
 .foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 dialog{width:min(460px,92vw);border:1px solid #21bfff;border-radius:20px;padding:0;color:#eff8ff;background:#061a34;box-shadow:0 0 35px #008cff88}
 dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
@@ -94,24 +95,53 @@ dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
 .paydesc{text-align:center;color:#b9cbe2;margin:0 0 14px}
 .qrbox{width:min(280px,100%);margin:0 auto 14px;padding:12px;background:#fff;border-radius:16px;display:grid;place-items:center;box-shadow:0 0 20px #12bfff55}
 .qrbox img{display:block;width:100%;height:auto;min-height:220px;object-fit:contain}
-.payinfo{margin:13px 0;padding:13px;border-radius:12px;background:#0a2a4d;font-size:14px;overflow-wrap:anywhere}
-.payinfo div{margin:6px 0}.copyline{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.copyline button{border:1px solid #39bfff;border-radius:8px;background:#07345e;color:#fff;padding:7px 11px;font-weight:850;cursor:pointer}
-.payhint{font-size:13px;color:#b9cbe2;text-align:center;margin:9px 0 13px}
-.modalactions{display:grid;gap:10px}.modalactions .btn{width:100%}
-@media(max-width:1000px){.links{gap:5px;font-size:12px}.links a{padding:8px 7px}.hero{gap:18px;min-height:500px;padding:26px 3%}.hero h1{font-size:clamp(30px,4vw,46px)}.hero-art{max-width:420px}.gallery{gap:12px}}
-@media(max-width:760px){.wrap{width:94%}.nav{height:64px}.links{display:none}.brand{font-size:17px}.hero{grid-template-columns:1fr;min-height:0;padding:22px 14px 26px;gap:14px;border-radius:0 0 20px 20px}.hero-art{order:-1;width:min(100%,360px);max-width:360px;margin:0 auto}.hero-copy{max-width:640px;text-align:center;margin:auto}.hero h1{font-size:clamp(27px,6.4vw,42px);white-space:normal;letter-spacing:-1px}.checks,.actions{justify-content:center}.subtitle{font-size:17px}.desc{font-size:13px}.checks{font-size:12px;gap:6px 10px}.specs{font-size:11px}.quick{grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:20px}.quick article{padding:13px 6px}.quick article:last-child{grid-column:span 2}.quick b{font-size:27px}.panel,.info{padding:16px}.section{padding:19px 0 25px}.stitle{font-size:21px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.prices{grid-template-columns:1fr;max-width:440px;gap:17px}.pricecard{min-height:0;padding:20px}.guide,.bottom{grid-template-columns:1fr}.foot{justify-content:center;text-align:center}}
-@media(max-width:420px){.hero{padding:18px 12px 22px}.hero-art{width:min(100%,320px)}.hero h1{font-size:28px}.hero h1 span{padding:1px 8px}.actions .btn{width:100%}.gallery{gap:9px}.shot figcaption{font-size:11px}.quick strong{font-size:14px}}
+.payhint{font-size:12px;color:#c5d9ee;text-align:center}
+.payinfo{padding:12px;background:#092746;border-radius:12px;font-size:13px;line-height:1.8}
+.copyline{display:flex;justify-content:space-between;gap:10px;align-items:center}.copyline button{border:0;border-radius:8px;padding:6px 10px;background:#0877e7;color:#fff;font-weight:800}
+.modalactions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.guide-grid article{background:#092746;border:1px solid #15517d;border-radius:12px;padding:10px}
+.guide-grid h4{margin:0 0 4px;color:#8feaff}.guide-grid p{font-size:12px;color:#d4e3f3;margin:0}
+@media(max-width:1050px){.links{gap:3px;font-size:11px}.links a{padding:6px}.hero-copy{width:72%}.hero h1{font-size:clamp(30px,4.2vw,45px)}.quick{gap:8px}.gallery{gap:12px}}
+@media(max-width:760px){.wrap{width:94%}.nav{height:58px}.links{display:none}.brand{font-size:14px}.navbtn{font-size:10px;padding:7px 10px}.hero{height:auto;min-height:0;padding:18px 12px 20px;background-image:linear-gradient(180deg,#03152d,#041b36)}.hero:before{display:none}.mobile-hero-art{display:block;width:min(100%,440px);height:auto;margin:0 auto 8px}.hero-copy{width:100%;max-width:640px}.hero h1{font-size:clamp(27px,6.4vw,42px);white-space:normal;letter-spacing:-1px}.checks,.actions{justify-content:center}.subtitle{font-size:16px}.desc{font-size:12px}.checks{font-size:11px;gap:5px 9px}.hero-quick{grid-template-columns:repeat(2,1fr);gap:8px;margin:10px auto}.hero-quick article:last-child{grid-column:span 2}.quick article{min-height:68px;padding:8px 5px}.quick b{font-size:25px}.quick strong{font-size:12px}.quick small{font-size:9px}.actions .btn{min-width:0;flex:1;font-size:13px;padding:9px 10px}.specs{font-size:10px}.panel,.info{padding:13px}.section{padding:0 0 16px}.stitle{font-size:19px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.preview{height:140px}.prices{grid-template-columns:1fr;max-width:440px;gap:14px}.pricecard{min-height:0;padding:16px}.bottom{grid-template-columns:1fr}.info{min-height:0}.guide-grid{grid-template-columns:1fr}.foot{justify-content:center;text-align:center}}
+@media(max-width:420px){.hero{padding:14px 10px 17px}.mobile-hero-art{width:100%}.hero h1{font-size:27px}.hero h1 span{padding:1px 8px}.actions{flex-direction:column}.actions .btn{width:100%}.gallery{gap:8px}.shot figcaption{font-size:10px}}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="#top">🛡️ SecurityTimeCamera</a><nav class="links"><a href="#top">Trang chủ</a><a href="#tinh-nang">Tính năng</a><a href="#hinh-anh">Hình ảnh</a><a href="#bang-gia">Bảng giá</a><a href="#phien-ban">Phiên bản</a><a href="#huong-dan">Hướng dẫn</a><a href="#ho-tro">Liên hệ</a></nav><a class="btn navbtn" href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk">⬇ Tải APK v3.9</a></div></header>
 <main id="top">
-<section class="wrap hero"><div class="hero-copy"><div class="eyebrow">CAMERA BẢO VỆ · PHIÊN BẢN 3.9</div><h1>SecurityTimeCamera <span>v3.9</span></h1><p class="subtitle">Ứng dụng Camera Bảo vệ – Ghi hình & Xác thực hiện trường</p><p class="desc">Ghi nhận hình ảnh và video tại hiện trường; hiển thị thời gian, vị trí, tên nhân viên và logo theo thiết lập.</p><div class="checks"><span>Chụp ảnh</span><span>Ghi video</span><span>Đóng dấu thời gian</span><span>Định vị GPS</span><span>Xác thực</span><span>Quản lý bản quyền</span></div><div class="actions"><a class="btn green" href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk">⬇ TẢI NGAY APK v3.9</a><a class="btn ghost" href="#hinh-anh">ⓘ Xem chi tiết</a></div><div class="specs">🤖 Hỗ trợ Android 8.0 trở lên &nbsp; | &nbsp; Dung lượng ~10 MB &nbsp; | &nbsp; Cập nhật 26/11/2026</div></div><div class="hero-art"><img src="assets/hero-phone-promo.svg" alt="Giao diện SecurityTimeCamera trên điện thoại với các tính năng chụp ảnh, video, thời gian và GPS" fetchpriority="high" width="600" height="640"></div></section>
-<section class="wrap quick" id="tinh-nang"><article><b>📷</b><strong>Ghi hình</strong><small>Chuẩn xác</small></article><article><b>📍</b><strong>Định vị</strong><small>GPS thực tế</small></article><article><b>🛡️</b><strong>Xác thực</strong><small>Thông tin ảnh</small></article><article><b>👑</b><strong>Bản quyền</strong><small>Quản lý Key</small></article><article><b>☁️</b><strong>Cập nhật</strong><small>OTA tiện lợi</small></article></section>
-<section class="wrap panel section" id="hinh-anh"><h2 class="stitle">✦ Hình ảnh giao diện thực tế</h2><p class="sub">Năm màn hình tiêu biểu của SecurityTimeCamera v3.9</p><div class="gallery"><figure class="shot"><div class="preview p1"></div><figcaption>Kích hoạt & Bản quyền</figcaption></figure><figure class="shot"><div class="preview p2"></div><figcaption>Cài đặt hệ thống</figcaption></figure><figure class="shot"><div class="preview p3"></div><figcaption>Cài đặt tên nhân viên</figcaption></figure><figure class="shot"><div class="preview p4"></div><figcaption>Cập nhật vị trí / GPS</figcaption></figure><figure class="shot"><div class="preview p5"></div><figcaption>Chỉnh ngày & giờ</figcaption></figure></div></section>
+<section class="wrap hero">
+<img class="mobile-hero-art" src="assets/hero-sides.webp" alt="Nhân viên Security và điện thoại SecurityTimeCamera">
+<div class="hero-copy">
+<div class="eyebrow">CAMERA BẢO VỆ · PHIÊN BẢN 3.9</div>
+<h1>SecurityTimeCamera <span>v3.9</span></h1>
+<p class="subtitle">Ứng dụng Camera Bảo vệ – Ghi hình & Xác thực hiện trường</p>
+<p class="desc">Ghi nhận hình ảnh và video tại hiện trường; hiển thị thời gian, vị trí, nhân viên và logo theo thiết lập.</p>
+<div class="checks"><span>Chụp ảnh</span><span>Ghi Video</span><span>Đóng dấu thời gian</span><span>Định vị GPS</span><span>Xác thực</span><span>Quản lý bản quyền</span></div>
+<div class="quick hero-quick" id="tinh-nang"><article><b>📷</b><strong>Ghi hình</strong><small>Chuẩn xác</small></article><article><b>📍</b><strong>Định vị</strong><small>GPS thực tế</small></article><article><b>🛡️</b><strong>Xác thực</strong><small>Thông tin ảnh</small></article><article><b>👑</b><strong>Bản quyền</strong><small>Quản lý Key</small></article><article><b>☁️</b><strong>Cập nhật</strong><small>OTA tiện lợi</small></article></div>
+<div class="actions"><a class="btn green" href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk">⬇ Tải ngay APK v3.9</a><a class="btn ghost" href="#hinh-anh">ⓘ Xem chi tiết</a></div>
+<div class="specs">✳ Hỗ trợ Android 8.0 trở lên &nbsp; | &nbsp; Dung lượng ~10 MB &nbsp; | &nbsp; Cập nhật: 26/11/2026</div>
+</div></section>
+
+<section class="wrap panel section" id="hinh-anh">
+<h2 class="stitle">✦ Hình ảnh giao diện thực tế</h2>
+<p class="sub">Các màn hình tiêu biểu của SecurityTimeCamera v3.9</p>
+<div class="gallery">
+<figure class="shot"><div class="preview"><img src="assets/gallery-strip.webp" alt="Màn hình kích hoạt bản quyền" style="--slice:0"></div><figcaption>Kích hoạt & Bản quyền</figcaption></figure>
+<figure class="shot"><div class="preview"><img src="assets/gallery-strip.webp" alt="Cài đặt hệ thống" style="--slice:1"></div><figcaption>Cài đặt hệ thống</figcaption></figure>
+<figure class="shot"><div class="preview"><img src="assets/gallery-strip.webp" alt="Cập nhật vị trí GPS" style="--slice:3"></div><figcaption>Cập nhật vị trí / GPS</figcaption></figure>
+<figure class="shot"><div class="preview"><img src="assets/gallery-strip.webp" alt="Giao diện camera chụp ảnh" style="--slice:2"></div><figcaption>Giao diện chụp ảnh</figcaption></figure>
+</div></section>
 <section class="wrap section" id="bang-gia"><div class="pricehead"><h2>Dùng thử trước, hài lòng mới mua</h2><p>Không cần đăng ký tài khoản. Chọn thời hạn phù hợp với nhu cầu sử dụng.</p></div><div class="prices"><article class="pricecard"><h3>Dùng thử</h3><div class="amount free">0đ <small>/ 1 ngày</small></div><ul><li>Trải nghiệm miễn phí 1 ngày</li><li>Không cần mua Key trong thời gian thử</li><li>Hết hạn có thể chọn gói trả phí</li></ul><a class="btn ghost" href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk">⬇ Tải APK dùng thử</a></article><article class="pricecard hot"><span class="popular">★ ĐƯỢC CHỌN NHIỀU</span><h3>15 ngày</h3><div class="amount orange">30.000đ</div><ul><li>Sử dụng đầy đủ tính năng trong 15 ngày</li><li>Không giới hạn số lần chụp/quay theo gói</li><li>Hỗ trợ kỹ thuật qua Zalo</li></ul><button class="btn" onclick="openPayment(15,30000)">▣ Mua gói 15 ngày</button></article><article class="pricecard"><h3>30 ngày</h3><div class="amount cyan">60.000đ</div><ul><li>Sử dụng đầy đủ tính năng trong 30 ngày</li><li>Phù hợp công việc thường xuyên</li><li>Hỗ trợ kỹ thuật qua Zalo</li></ul><button class="btn" onclick="openPayment(30,60000)">▣ Mua gói 30 ngày</button></article></div><p class="pricenote">Thanh toán bằng QR ngân hàng. Sau khi chuyển khoản, gửi xác nhận giao dịch và mã máy qua Zalo để nhận Key. Xác nhận thanh toán và cấp Key hiện được quản trị viên thực hiện thủ công.</p></section>
 <section class="wrap section" id="huong-dan"><div class="panel"><h2 class="stitle">▣ Hướng dẫn cài đặt & sử dụng</h2><p class="sub">Hướng dẫn bằng chữ, từng bước rõ ràng.</p><div class="guide"><article class="step"><span class="num">1</span><h3>Tải ứng dụng</h3><p>Nhấn nút Tải APK v3.9 trên website và chờ tải tệp hoàn tất từ GitHub.</p></article><article class="step"><span class="num">2</span><h3>Cài đặt APK</h3><p>Mở tệp APK vừa tải. Nếu Android hỏi, cho phép trình duyệt hoặc trình quản lý tệp cài ứng dụng từ nguồn này.</p></article><article class="step"><span class="num">3</span><h3>Cấp quyền</h3><p>Mở ứng dụng và cấp quyền Camera, vị trí hoặc micro khi được yêu cầu cho chức năng tương ứng.</p></article><article class="step"><span class="num">4</span><h3>Thiết lập thông tin</h3><p>Vào các mục Giờ, Vị trí, Tên và Logo để chọn thông tin muốn hiển thị.</p></article><article class="step"><span class="num">5</span><h3>Ghi hình</h3><p>Chọn chế độ Ảnh hoặc Video, kiểm tra khung hình và thông tin hiển thị trước khi ghi nhận.</p></article><article class="step"><span class="num">6</span><h3>Kích hoạt Key</h3><p>Vào Bản quyền, sao chép mã máy, gửi mã máy cùng xác nhận thanh toán qua Zalo để nhận Key.</p></article></div><div class="note">Lưu ý: Chỉ tải APK từ liên kết GitHub chính thức. Quyền được yêu cầu có thể khác nhau tùy phiên bản Android.</div></div></section>
-<section class="wrap bottom"><article class="info"><h3>✦ Tính năng nổi bật</h3><ul><li>Chụp ảnh và quay video trên ứng dụng.</li><li>Hiển thị thời gian, vị trí và tên nhân viên.</li><li>Tùy chọn logo và thông tin trên hình.</li><li>Hỗ trợ EXIF và chữ ký HMAC-SHA256.</li><li>Trung tâm xác thực phân biệt LIVE, CUSTOM và GALLERY.</li></ul></article><article class="info" id="phien-ban"><h3>◉ Lịch sử phiên bản</h3><p><strong>v3.9 · 26/11/2026</strong> <span class="chip">MỚI NHẤT</span></p><ul><li>Đồng bộ versionCode 39 và versionName 3.9.</li><li>Tinh chỉnh nền tên nhân viên cho ảnh dọc/ngang.</li><li>Tối ưu thao tác chụp ảnh qua RAM.</li><li>Cải thiện dữ liệu EXIF và chữ ký xác thực.</li></ul><a href="https://github.com/aentongthi/security-time/releases" style="color:#80ddff;text-decoration:underline;font-size:12px">Xem lịch sử phát hành GitHub</a></article><article class="info" id="ho-tro"><h3>▣ Hướng dẫn & Hỗ trợ</h3><div class="support"><a href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk">⬇ Tải APK v3.9</a><a href="https://zalo.me/0907320397">Liên hệ hỗ trợ qua Zalo</a><a href="https://github.com/aentongthi/security-time/releases">Xem phiên bản cập nhật</a></div><div class="zalo">Zalo hỗ trợ: <strong>0907320397</strong></div></article></section>
+<section class="wrap bottom"><article class="info"><h3>✦ Tính năng nổi bật</h3><ul><li>Chụp ảnh và quay video trên ứng dụng.</li><li>Hiển thị thời gian, vị trí và tên nhân viên.</li><li>Tùy chọn logo và thông tin trên hình.</li><li>Hỗ trợ EXIF và chữ ký HMAC-SHA256.</li><li>Trung tâm xác thực phân biệt LIVE, CUSTOM và GALLERY.</li></ul></article><article class="info" id="phien-ban"><h3>◉ Lịch sử phiên bản</h3><p><strong>v3.9 · 26/11/2026</strong> <span class="chip">MỚI NHẤT</span></p><ul><li>Đồng bộ versionCode 39 và versionName 3.9.</li><li>Tinh chỉnh nền tên nhân viên cho ảnh dọc/ngang.</li><li>Tối ưu thao tác chụp ảnh qua RAM.</li><li>Cải thiện dữ liệu EXIF và chữ ký xác thực.</li></ul><a href="https://github.com/aentongthi/security-time/releases" style="color:#80ddff;text-decoration:underline;font-size:12px">Xem lịch sử phát hành GitHub</a></article><article class="info" id="ho-tro"><h3>▣ Hướng dẫn & Hỗ trợ</h3><div class="support"><a href="#" onclick="event.preventDefault();document.getElementById('guideModal').showModal()">▶ Hướng dẫn cài đặt & sử dụng</a><a href="https://zalo.me/0907320397">☷ Liên hệ hỗ trợ (Zalo)</a></div><div class="zalo">Zalo hỗ trợ: <strong>0907320397</strong></div></article></section>
 </main><footer><div class="wrap foot"><span><strong>SecurityTimeCamera v3.9</strong> · Ứng dụng hỗ trợ công việc bảo vệ</span><span><a href="https://github.com/aentongthi/security-time">GitHub</a> · <a href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk">Tải APK</a></span></div></footer>
+<dialog id="guideModal"><div class="modalhead"><h3>Hướng dẫn cài đặt & sử dụng</h3><button class="close" onclick="document.getElementById('guideModal').close()">×</button></div><div class="modalbody"><div class="guide-grid">
+<article><h4>1. Tải ứng dụng</h4><p>Nhấn nút Tải APK v3.9 và chờ tải tệp hoàn tất từ GitHub.</p></article>
+<article><h4>2. Cài đặt APK</h4><p>Mở tệp APK vừa tải và cho phép cài đặt từ nguồn này nếu Android yêu cầu.</p></article>
+<article><h4>3. Cấp quyền</h4><p>Cấp quyền Camera, vị trí và micro khi ứng dụng yêu cầu cho chức năng tương ứng.</p></article>
+<article><h4>4. Thiết lập</h4><p>Chọn Giờ, Vị trí, Tên nhân viên và Logo muốn hiển thị.</p></article>
+<article><h4>5. Ghi hình</h4><p>Chọn Ảnh hoặc Video, kiểm tra khung hình và thông tin trước khi ghi nhận.</p></article>
+<article><h4>6. Bản quyền</h4><p>Sao chép mã máy, gửi cùng xác nhận thanh toán qua Zalo để nhận Key.</p></article>
+</div></div></dialog>
 <dialog id="paymentModal"><div class="modalhead"><h3 id="modalTitle">Thanh toán SecurityTimeCamera</h3><button class="close" onclick="paymentModal.close()">×</button></div><div class="modalbody"><p class="payamount" id="payAmount">30.000đ</p><p class="paydesc" id="payDesc">Gói sử dụng 15 ngày</p><div class="qrbox"><img id="vietQrImage" src="" alt="Mã QR chuyển khoản MB Bank"></div><p class="payhint">Mở ứng dụng ngân hàng và quét mã QR để chuyển đúng số tiền.</p><div class="payinfo"><div><strong>Ngân hàng:</strong> MB Bank</div><div><strong>Số tài khoản:</strong> 0901222575</div><div><strong>Chủ tài khoản:</strong> NGUYEN TONG THI</div><div><strong>Số tiền:</strong> <span id="payAmountText">30.000đ</span></div><div class="copyline"><span><strong>Nội dung:</strong> <span id="payContent">STC15</span></span><button type="button" onclick="copyPaymentContent()">Sao chép</button></div></div><p class="payhint">Sau khi chuyển khoản, gửi ảnh giao dịch và mã máy qua Zalo để quản trị viên kiểm tra, cấp Key.</p><div class="modalactions"><a class="btn" id="zaloPayLink" href="https://zalo.me/0907320397">Gửi xác nhận thanh toán qua Zalo</a><button class="btn ghost" onclick="paymentModal.close()">Đóng</button></div></div></dialog>
 <script>
 const BANK_CONFIG={bankBin:"970422",accountNumber:"0901222575",accountName:"NGUYEN TONG THI"};
