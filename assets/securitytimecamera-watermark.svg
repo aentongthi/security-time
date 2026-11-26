@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="760" viewBox="0 0 800 760">
+ <defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0a8"/><stop offset=".28" stop-color="#dcae45"/><stop offset=".58" stop-color="#fff0a0"/><stop offset="1" stop-color="#9b641c"/></linearGradient>
+  <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#314764"/><stop offset="1" stop-color="#071a32"/></linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#b9c5d3"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+  <g id="leaf" fill="url(#gold)" stroke="#8d5b1b" stroke-width="2"><path d="M0 0 C-22 -24 -20 -53 2 -68 C21 -42 20 -17 0 0Z"/></g>
+ </defs>
+ <g opacity=".25" filter="url(#shadow)" fill="#000"><path d="M400 118 L610 220 L590 475 Q550 625 400 704 Q250 625 210 475 L190 220Z"/></g>
+ <!-- laurel stems -->
+ <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round">
+  <path d="M250 620 C115 520 112 350 230 190"/><path d="M550 620 C685 520 688 350 570 190"/>
+ </g>
+ <g>
+  <use href="#leaf" transform="translate(205 572) rotate(-62) scale(.9)"/><use href="#leaf" transform="translate(166 520) rotate(-72) scale(.92)"/>
+  <use href="#leaf" transform="translate(145 455) rotate(-78)"/><use href="#leaf" transform="translate(143 390) rotate(-88)"/>
+  <use href="#leaf" transform="translate(160 326) rotate(-108)"/><use href="#leaf" transform="translate(190 270) rotate(-126)"/>
+  <use href="#leaf" transform="translate(232 220) rotate(-142)"/><use href="#leaf" transform="translate(272 183) rotate(-150) scale(.86)"/>
+  <use href="#leaf" transform="translate(595 572) rotate(62) scale(.9)"/><use href="#leaf" transform="translate(634 520) rotate(72) scale(.92)"/>
+  <use href="#leaf" transform="translate(655 455) rotate(78)"/><use href="#leaf" transform="translate(657 390) rotate(88)"/>
+  <use href="#leaf" transform="translate(640 326) rotate(108)"/><use href="#leaf" transform="translate(610 270) rotate(126)"/>
+  <use href="#leaf" transform="translate(568 220) rotate(142)"/><use href="#leaf" transform="translate(528 183) rotate(150) scale(.86)"/>
+ </g>
+ <!-- shield -->
+ <path d="M400 105 L620 218 L598 460 Q560 615 400 690 Q240 615 202 460 L180 218Z" fill="url(#shield)" stroke="url(#gold)" stroke-width="19" stroke-linejoin="round"/>
+ <path d="M400 130 L596 231 L576 451 Q541 590 400 660 Q259 590 224 451 L204 231Z" fill="none" stroke="#e5bd67" stroke-width="5" opacity=".75"/>
+ <!-- camera -->
+ <g transform="translate(330 235)" fill="url(#gold)" stroke="#8b5b20" stroke-width="5" stroke-linejoin="round">
+  <path d="M14 22 H43 L58 4 H105 L120 22 H143 Q153 22 153 33 V94 Q153 104 143 104 H14 Q4 104 4 94 V33 Q4 22 14 22Z"/>
+  <path d="M4 42 H153" fill="none"/><circle cx="78" cy="64" r="29" fill="#172b42" stroke="#e9c36c" stroke-width="8"/><circle cx="78" cy="64" r="17" fill="#243c55" stroke="#a57a36" stroke-width="4"/>
+  <rect x="119" y="31" width="18" height="9" rx="3" fill="#172b42"/>
+ </g>
+ <g text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="900" fill="url(#silver)" stroke="#26384c" stroke-width="2" paint-order="stroke">
+  <text x="400" y="405" font-size="58" letter-spacing="1">SECURITY</text>
+  <text x="400" y="475" font-size="58" letter-spacing="2">TIME</text>
+  <text x="400" y="545" font-size="58" letter-spacing="1">CAMERA</text>
+ </g>
+ <g fill="url(#gold)" stroke="#9b6a27" stroke-width="2">
+  <path d="M340 590 L350 610 L372 613 L356 628 L360 650 L340 639 L320 650 L324 628 L308 613 L330 610Z"/>
+  <path d="M400 584 L412 608 L438 612 L419 630 L424 656 L400 643 L376 656 L381 630 L362 612 L388 608Z"/>
+  <path d="M460 590 L470 610 L492 613 L476 628 L480 650 L460 639 L440 650 L444 628 L428 613 L450 610Z"/>
+ </g>
+</svg>
