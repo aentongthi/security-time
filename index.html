@@ -126,15 +126,38 @@ dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
 @media(max-width:1050px){.links{gap:3px;font-size:11px}.links a{padding:6px}.hero-copy{width:68%}.hero h1{font-size:clamp(30px,4.2vw,45px)}.quick{gap:8px}.gallery{gap:12px}}
 @media(max-width:760px){.wrap{width:94%}.nav{height:58px}.menu-toggle{display:inline-flex;order:2;flex-shrink:0}.navbtn{order:3}.links{display:none}.links.open{display:flex;position:absolute;top:calc(100% + 1px);left:0;right:0;z-index:30;flex-direction:column;align-items:stretch;gap:3px;padding:10px;background:#03172e;border:1px solid #168cff;border-radius:0 0 14px 14px;box-shadow:0 12px 24px #0009}.links.open a{padding:10px 12px;border-radius:9px}.brand{font-size:14px}.navbtn{font-size:10px;padding:7px 10px}.hero{height:auto;min-height:0;padding:14px 12px 20px;background-image:linear-gradient(180deg,#03152d,#041b36)}.hero:before{display:none}.hero-side-art{display:none}.mobile-hero-art{display:flex;width:min(100%,520px);height:190px;margin:0 auto 10px;align-items:center;justify-content:center;gap:12px;overflow:hidden}.mobile-hero-art img{display:block;height:100%;width:auto;max-width:48%;object-fit:contain}.hero-copy{width:100%;max-width:640px}.hero h1{font-size:clamp(27px,6.4vw,42px);white-space:normal;letter-spacing:-1px}.checks,.actions{justify-content:center}.subtitle{font-size:16px}.desc{font-size:12px}.checks{font-size:11px;gap:5px 9px}.hero-quick{grid-template-columns:repeat(2,1fr);gap:8px;margin:10px auto}.hero-quick article:last-child{grid-column:span 2}.quick article{min-height:68px;padding:8px 5px}.quick b{font-size:25px}.quick strong{font-size:12px}.quick small{font-size:9px}.actions .btn{min-width:0;flex:1;font-size:13px;padding:9px 10px}.specs{font-size:10px}.panel,.info{padding:13px}.section{padding:0 0 16px}.stitle{font-size:19px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.prices{grid-template-columns:1fr;max-width:440px;gap:14px}.pricecard{min-height:0;padding:16px}.bottom{grid-template-columns:1fr}.info{min-height:0}.guide{grid-template-columns:1fr 1fr}.guide-grid{grid-template-columns:1fr}.foot{justify-content:center;text-align:center}}
 @media(max-width:420px){.brand{font-size:12px}.nav{gap:7px}.navbtn{font-size:9px;padding:6px 8px}.menu-toggle{width:32px;height:32px}.hero{padding:12px 10px 17px}.mobile-hero-art{width:100%}.hero h1{font-size:27px}.hero h1 span{padding:1px 8px}.actions{flex-direction:column}.actions .btn{width:100%}.gallery{gap:8px}.shot figcaption{font-size:10px}.guide{grid-template-columns:1fr}}
+
+/* mobile-home-v2: single-column hero, existing desktop untouched */
+@media(max-width:760px){
+.hero{display:block;height:auto;min-height:0;padding:18px 14px 20px}
+.hero-copy{display:flex;flex-direction:column;align-items:center;width:100%;min-width:0;max-width:640px;margin:0 auto}
+.hero-copy>*{min-width:0;max-width:100%}
+.hero h1{font-size:clamp(24px,7vw,42px);white-space:normal;overflow-wrap:anywhere;margin:8px 0 10px}
+.hero h1 span{display:table;margin:8px auto 0}
+.hero .subtitle{margin:0 0 12px;font-size:17px;line-height:1.35}
+.hero .mobile-hero-art{display:flex;flex:none;width:100%;height:clamp(180px,57vw,300px);gap:10px;margin:0 auto 12px}
+.mobile-hero-art img{height:100%;width:calc(50% - 5px);max-width:50%;object-fit:contain}
+.hero .desc{font-size:13px;line-height:1.5}
+.hero .checks{margin:12px 0;gap:6px 12px}
+.hero .actions{order:1;width:100%;display:grid;grid-template-columns:1fr;gap:9px;margin:6px 0 0}
+.hero .actions .btn{width:100%;min-height:44px;font-size:15px}
+.hero .specs{order:2;margin:10px 0;color:var(--muted);line-height:1.5}
+.hero .hero-quick{order:3;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));margin:6px 0 0;gap:10px}
+.hero .hero-quick article:last-child{grid-column:1/-1}
+.nav{height:52px;gap:6px}
+.nav .brand{min-width:0;white-space:normal;overflow-wrap:anywhere}
+.navbtn{flex-shrink:0}
+}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="#top" aria-label="SecurityTimeCamera – về đầu trang">🛡️ SecurityTimeCamera</a><button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-controls="siteLinks" aria-expanded="false" onclick="toggleMenu()">☰</button><nav class="links" id="siteLinks" aria-label="Điều hướng chính"><a href="#top">Trang chủ</a><a href="#tinh-nang">Tính năng</a><a href="#hinh-anh">Hình ảnh</a><a href="#bang-gia">Bảng giá</a><a href="#phien-ban">Phiên bản</a><a href="#huong-dan">Hướng dẫn</a><a href="#cau-hoi">Câu hỏi</a><a href="#ho-tro">Liên hệ</a></nav><a class="btn navbtn" href="https://github.com/aentongthi/security-time/releases/download/v3.9/app-debug.apk" aria-label="Tải ứng dụng SecurityTimeCamera phiên bản 3.9">⬇ Tải APK v3.9</a></div></header>
 <main id="top">
 <section class="wrap hero">
-<img class="hero-side-art guard-art" src="assets/hero-guard-v4.webp" alt="Nhân viên Security" aria-hidden="true"><img class="hero-side-art phone-art" src="assets/hero-phone-v4.webp" alt="Điện thoại SecurityTimeCamera" aria-hidden="true"><div class="mobile-hero-art" aria-label="Nhân viên Security và điện thoại SecurityTimeCamera"><img src="assets/hero-guard-v4.webp" alt="Nhân viên Security"><img src="assets/hero-phone-v4.webp" alt="Điện thoại SecurityTimeCamera"></div>
+<img class="hero-side-art guard-art" src="assets/hero-guard-v4.webp" alt="Nhân viên Security" aria-hidden="true"><img class="hero-side-art phone-art" src="assets/hero-phone-v4.webp" alt="Điện thoại SecurityTimeCamera" aria-hidden="true">
 <div class="hero-copy">
 <div class="eyebrow">CAMERA BẢO VỆ · PHIÊN BẢN 3.9</div>
 <h1>SecurityTimeCamera <span>v3.9</span></h1>
 <p class="subtitle">Ứng dụng Camera Bảo vệ – Ghi hình & Xác thực hiện trường</p>
+<div class="mobile-hero-art" aria-label="Nhân viên Security và điện thoại SecurityTimeCamera"><img src="assets/hero-guard-v4.webp" alt="Nhân viên Security"><img src="assets/hero-phone-v4.webp" alt="Điện thoại SecurityTimeCamera"></div>
 <p class="desc">Ghi nhận hình ảnh và video tại hiện trường; hiển thị thời gian, vị trí, nhân viên và logo theo thiết lập.</p>
 <div class="checks"><span>Chụp ảnh</span><span>Ghi Video</span><span>Đóng dấu thời gian</span><span>Định vị GPS</span><span>Xác thực</span><span>Quản lý bản quyền</span></div>
 <div class="quick hero-quick" id="tinh-nang"><article><b>📷</b><strong>Ghi hình</strong><small>Chuẩn xác</small></article><article><b>📍</b><strong>Định vị</strong><small>GPS thực tế</small></article><article><b>🛡️</b><strong>Xác thực</strong><small>Thông tin ảnh</small></article><article><b>👑</b><strong>Bản quyền</strong><small>Quản lý Key</small></article><article><b>☁️</b><strong>Cập nhật</strong><small>OTA tiện lợi</small></article></div>
