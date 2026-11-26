@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aentongthi.github.io/security-time/sitemap.xml
